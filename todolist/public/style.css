@@ -1,0 +1,158 @@
+body {
+    background-color: #fcfcfc;
+    min-height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 0%);
+    text-align: center;
+    font-size: 130%;
+    font-family: "Acme", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .container {
+    width: 200%;
+    height: 100%;
+    min-height: 500px;
+    max-width: 600px;
+    min-width: 250px;
+    background:#DCE2F7;
+    border-radius: 20px;
+    box-shadow: 4px 3px 7px 2px #00000040;
+    padding: 1rem;
+    margin-left:-40%;
+  }
+
+  .inbox{
+    background-color:#F7F7F7;
+    height: 10vh;
+    border-radius: 5px 0px 5px 0px;
+    box-shadow: 4px 3px 7px 2px #00000040;
+  }
+  
+  .listcon{
+    background-color:#F7F7F7;
+    border-radius: 5px;
+    height: 60vh;
+    box-shadow: 4px 3px 7px 2px #00000040;
+  }
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    
+  }
+  .heading h1 {
+    /* transform: rotate(2deg); */
+    padding: 0.2rem 1.2rem;
+    /* border-radius: 20% 5% 20% 5%/5% 20% 25% 20%; */
+    /* background-color: #AA7AE4; */
+    /* box-shadow: 4px 3px 7px 2px #00000040; */
+    font-size: 3.0rem;
+    
+    
+  }
+  
+  .in {
+    box-sizing: border-box;
+    background-color:rgb(221, 204, 238);
+    padding: 0.2rem;
+    border: solid 2px black;
+    font-family: "Architects Daughter", cursive;
+    font-size: 1rem;
+    color: hsla(260, 2%, 25%, 0.7);
+    width: 70%;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-top: 19px;
+  }
+
+  /* .inbox{
+    background-color: antiquewhite;
+    padding: 2%;
+    margin-top: 4%;
+    justify-content: center;
+    align-items: center;
+    height:50%;
+  }
+
+  .listcon{
+    background-color: hsl(0, 0%, 99%);
+    border-radius: 5px;
+    height: 50%;
+  } */
+  
+  button {
+    padding: 0;
+    border: none;
+    font-family: "Architects Daughter", cursive;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    color: white;
+    background-color: #000000;
+  }
+  button span {
+    background: #AA7AE4;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid hsl(198, 1%, 29%);
+  }
+
+  /* li {
+    text-align: left;
+    position: relative;
+    background-color: rgb(221, 204, 238);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 35px;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    word-wrap: break-word;
+  }
+  
+  .dltbtn {
+    background-color: rgb(221, 204, 238);
+    gap: 100%;
+  }
+
+  .cmlbtn{
+    background-color: rgb(221, 204, 238);
+
+  }
+   */
+
+   li {
+    text-align: left;
+    position: relative;
+    background-color: rgb(221, 204, 238);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 35px;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    word-wrap: break-word;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 5px; /* Adjust the gap according to your preference */
+  }
+  
+  .dltbtn, .cmlbtn {
+    background-color: rgb(221, 204, 238);
+  }
+  
