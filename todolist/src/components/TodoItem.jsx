@@ -1,12 +1,17 @@
-
-import React from "react";
+import {React,useState} from "react";
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 
 function ToDoItem(props) {
+  const [completed,setCompleted] = useState(false);
+
+  const handleCompleted = () =>{
+    setCompleted(!completed);
+  }
   return (
-    <li>
-      {props.item} 
+    <li style={{ textDecoration: completed ? 'line-through' : 'none' }}>
+      {/* {props.item}  */}
+      <span   style={{ cursor: 'pointer' }} onClick={handleCompleted}>{props.item}</span>
       <div className="button-container">
 
         <button className="cmlbtn" 
