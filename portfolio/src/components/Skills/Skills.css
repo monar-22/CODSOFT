@@ -1,0 +1,79 @@
+#skills{
+    position: relative;
+    /* overflow: hidden; */
+    max-width: 65rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+}
+
+.det-con{
+    display: inline-block;
+    border:rgb(53,53,53) 0.1rem solid;
+    border-radius:2rem;
+    border-color:rgb(163,163,163);
+    box-shadow: 5px 10px 8px #888888;
+    padding: 1.5rem;
+    flex:1;
+    background:white;
+    text-align: center;
+}
+
+/* .det-con span{
+    margin-left:40%;
+} */
+
+.sec-con{
+    gap:4rem;
+    height:80%;
+}
+
+.sec_pic-con{
+    height: 400px;
+    width: 400px;
+    margin:auto 0;
+}
+.con li{
+     list-style: none;
+     text-align:start ;
+}
+
+#exp{
+    position: relative;
+}
+
+.exp-sub-tit{
+    color: rgb(85,85,85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.exp-det-con{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-con{
+    display: flex;
+    /* text-align:center; */
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:2.5rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width: 10rem;
+    /* justify-content: space-around; */
+    text-align: left;
+    gap:0.5rem;
+}
+
+.icon{
+    cursor:pointer;
+    height:2rem;
+}

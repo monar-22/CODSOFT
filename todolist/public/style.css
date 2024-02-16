@@ -135,6 +135,8 @@ body {
    li {
     text-align: left;
     position: relative;
+    padding-left: 15px;
+    padding-right:15px;
     background-color: rgb(221, 204, 238);
     border-radius: 5px;
     margin-bottom: 10px;

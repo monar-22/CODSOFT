@@ -1,0 +1,221 @@
+/* Common styles */
+*{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav{
+  background-color: rgb(214, 208, 196);
+ 
+}
+
+.nav h2{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.shop{
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pr{
+  margin-bottom: 0%;
+}
+/* Products */
+
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.product {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height:460px;
+  align-items: center;
+  
+}
+
+.product img {
+  height:350px;
+  width: 300px;
+  object-fit:fill;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.product .description {
+  padding: 5px;
+  text-align: center;
+  margin-bottom: -5%;
+}
+
+
+
+.product:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.addToCartBttn {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 50%;
+  width:40%;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 40%;
+}
+
+.addToCartBttn:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+}
+
+/* Cart */
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.cartItem {
+  display: flex;
+  width: 800px;
+  max-width: 700px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+.cartItem img {
+  width: 30%;
+  object-fit: fit;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.cartItem .description {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.countHandler {
+  display: flex;
+  align-items: center;
+}
+
+.countHandler button {
+  width: 30px;
+  height: 32px;
+  background-color: black;
+  color: white;
+  border: 2px solid rgb(19, 19, 19);
+  /* margin: 0 10px; */
+}
+
+.countHandler input {
+  width: 40px;
+  text-align: center;
+  /* font-weight: bold; */
+}
+
+.checkout button {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  margin-right: -10%;
+}
+
+.msg{
+  margin-top: 5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* singleprod */
+
+
+.single-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 7%;
+}
+.single-product img{
+  height:400px;
+  width:300px;
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product-details {
+  margin-left: 20px;
+}
+
+.product-details h2 {
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .product img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+
+.cbtn {
+  display: inline-block;
+  background-color: #413838; /* Background color of the button */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the content */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+}
+
+.cbtn p1 {
+  margin-left: 5px; /* Adjust spacing between icon and text */
+}
+
+/* You can adjust the styling for the button hover and active states as needed */
+.cbtn:hover {
+  background-color: #3b2c2c; /* Change background color on hover */
+}
+.cbtn:active {
+  background-color: #413838; /* Change background color on click */
+}
+
+
+.cbtn svg {
+  vertical-align: middle; 
+}
